@@ -2,6 +2,7 @@
 The link to our paper is [available here.](https://dl.acm.org/doi/10.1145/3477495.3532013)
 
 You can cite our work with
+
 `
 @inproceedings{10.1145/3477495.3532013,
 author = {Chandradevan, Ramraj and Yang, Eugene and Yarmohammadi, Mahsa and Agichtein, Eugene},
