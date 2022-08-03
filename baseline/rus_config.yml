@@ -1,0 +1,64 @@
+documents:
+  input:
+    encoding: utf8
+    format: json
+    lang: rus
+    path: <documents_data_filename>
+  output: false
+  process:
+    normalize:
+      lowercase: true
+      report: false
+    stem: false
+    stopwords: lucene
+    strict_check: true
+    tokenize: spacy
+index:
+  name: lucene
+  output: <output_index_directory_name>
+queries:
+  output: processed_queries
+  process:
+    normalize:
+      lowercase: true
+      report: false
+    stem: false
+    stopwords: lucene
+    strict_check: true
+    tokenize: spacy
+retrieve:
+  b: 0.4
+  fb_docs: 10
+  fb_terms: 10
+  input:
+    index:
+      path: <output_index_directory_name>
+  k1: 0.9
+  mu: 1000
+  name: bm25
+  number: 1000
+  original_query_weight: 0.5
+  output: retrieve
+  rm3: false
+
+run:
+  name: Russian CLEF baseline spacy bm25 w/ ad w/o rm3 default parameters
+  path: <output_results_folder>
+  results: results.txt
+
+score:
+  input:
+    format: trec
+    path: <qrels_labels_filename>
+
+topics:
+  fields: title
+  input:
+    encoding: utf8
+    format: json
+    lang: rus
+    path: <machine_translated_queries_filename>
+
+
+
+
