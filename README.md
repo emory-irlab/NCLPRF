@@ -1,6 +1,9 @@
 # NCLPRF
-<<<<<<< HEAD
+
 Neural PRF based re-ranking on CLIR
+
+You can find [our NCLPRF paper here](https://dl.acm.org/doi/10.1145/3477495.3532013)
+
 
 # Data Preparation
 
@@ -49,7 +52,3 @@ numpages = {6},
 location = {Madrid, Spain},
 series = {SIGIR '22}
 }```
-=======
-The link to our paper is [available here.](https://dl.acm.org/doi/10.1145/3477495.3532013)
-
->>>>>>> 3b45bb6d36087606fc69729e30dea40f8aa78463
